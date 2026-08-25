@@ -129,6 +129,13 @@
     font-size:0.8rem; color:var(--walnut); background:rgba(250,247,242,0.85);
     padding:6px 12px; border-radius:20px; font-weight:500;
   }
+  .gallery-item img{width:100%; height:100%; object-fit:cover; display:block;}
+  .gallery-item .caption{
+    position:absolute; bottom:0; left:0; right:0;
+    background:linear-gradient(180deg, transparent, rgba(43,29,20,0.75));
+    color:var(--linen); font-size:0.82rem; font-weight:500;
+    padding:22px 14px 10px;
+  }
   @media (max-width:800px){ .gallery-grid{grid-template-columns:1fr 1fr;} }
 
   .cta-band{
@@ -286,10 +293,13 @@
     <div class="section-head">
       <div class="eyebrow">Trabajos recientes</div>
       <h2>Algunos proyectos</h2>
-      <p>Espacio reservado — reemplaza estos bloques con fotos reales de trabajos terminados.</p>
+      <p>Piezas fabricadas e instaladas a medida. Los dos espacios restantes se irán llenando con más proyectos.</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item"><span>Foto de proyecto 1</span></div>
+      <div class="gallery-item">
+        <img src="images/proyecto-closet-1.jpg" alt="Clóset a medida con puertas y cajones, acabado blanco">
+        <div class="caption">Clóset a medida — puertas y cajonera</div>
+      </div>
       <div class="gallery-item"><span>Foto de proyecto 2</span></div>
       <div class="gallery-item"><span>Foto de proyecto 3</span></div>
     </div>
